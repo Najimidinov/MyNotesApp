@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.mynotesapp.databinding.FragmentSearchBinding
 import com.example.mynotesapp.model.Note
-import com.example.mynotesapp.ui.NoteFragmentDirections
 import com.example.mynotesapp.ui.NotesAdapter
 import com.example.mynotesapp.ui.NotesViewModel
 import com.example.mynotesapp.utils.EMPTY_STRING
@@ -26,7 +25,7 @@ class SearchFragment : Fragment() {
     private val adapter: NotesAdapter by lazy {
         NotesAdapter(navigateToNoteDetails = { note ->
             findNavController().navigate(
-                NoteFragmentDirections.actionDetailsNotesFragmentToDetailsNotesFragment(note)
+                SearchFragmentDirections.actionEmptySearchFragmentToDetailsNotesFragment(note)
             )
         }, deleteNote = { note ->
             list = viewModel.deleteNote(note)
