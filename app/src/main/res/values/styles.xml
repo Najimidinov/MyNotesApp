@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TitleTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">43sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginStart">24dp</item>
+    </style>
+
+    <style name="EmptyNotesStile" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    
+    <style name="FloatCardViewStyle" parent="Base.CardView">
+        <item name="cardCornerRadius">15dp</item>
+        <item name="android:backgroundTint">@color/color_rounding</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+    
+    <style name="FloatImageStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/color_text</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="CardViewPlus" parent="Base.CardView">
+      <item name="android:layout_marginBottom">49dp</item>
+        <item name="android:layout_marginEnd">35dp</item>
+        <item name="cardCornerRadius">80dp</item>
+        <item name="android:backgroundTint">@color/color_rounding</item>
+        <item name="elevation">40dp</item>
+    </style>
+    
+    <style name="TitleEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:hint">@string/txt_hint_et</item>
+        <item name="android:textColorHint">@color/color_hint</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+    </style>
+    
+    <style name="TypeEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:hint">@string/txt_hint_et_description</item>
+        <item name="android:textColorHint">@color/color_hint</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="android:layout_marginStart">24dp</item>
+    </style>
+
+    <style name="SearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textColor">@color/color_text</item>
+        <item name="android:textColorHint">@color/color_text_hint</item>
+        <item name="android:editTextColor">@color/color_text_hint</item>
+    </style>
+</resources>

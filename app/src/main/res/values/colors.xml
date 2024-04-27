@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // App Colors
+    <color name="color_main">#FF252525</color>
+    <color name="color_text">#FFFFFFFF</color>
+    <color name="color_hint">#FF9A9A9A</color>
+    <color name="color_rounding">#FF3B3B3B</color>
+    <color name="color_black">#FF000000</color>
+    <color name="color_text_hint">#FFCCCCCC</color>
+</resources>

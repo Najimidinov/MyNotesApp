@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_main"
+    tools:context=".ui.details.DetailsNotesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:layout_marginTop="53dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_arrow_left"
+            style="@style/FloatCardViewStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="23dp">
+
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_left"
+                android:importantForAccessibility="no" />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_conservation"
+            style="@style/FloatCardViewStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="250dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/preservation"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_title_note"
+        style="@style/TitleEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        tools:ignore="LabelFor,TextFields"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/et_type_something_note"
+        style="@style/TypeEditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor,TextFields" />
+</LinearLayout>

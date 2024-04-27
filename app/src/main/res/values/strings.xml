@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyNotesApp</string>
+    <string name="txt_main_notes">Notes</string>
+    <string name="txt_hint_et">Title</string>
+    <string name="txt_hint_et_description">Type something…</string>
+    <string name="txt_empty_notes">Create your first note!</string>
+    <string name="txt_blank_fragment">Hello blank fragment</string>
+    <string name="txt_empty_add_note">Fill in title and description!</string>
+    <string name="txt_search_hint">Search by the keyword…</string>
+    <string name="txt_hint">File not found. Try searching again.</string>
+</resources>

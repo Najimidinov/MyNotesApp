@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/notesFragment">
+
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.mynotesapp.ui.NoteFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_detailsNotesFragment_to_detailsNotesFragment"
+            app:destination="@id/detailsNotesFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_emptySearchFragment"
+            app:destination="@id/emptySearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsNotesFragment"
+        android:name="com.example.mynotesapp.ui.details.DetailsNotesFragment"
+        android:label="fragment_details_note"
+        tools:layout="@layout/fragment_details_note" >
+        <argument
+            android:name="note"
+            app:argType="com.example.mynotesapp.model.Note" />
+    </fragment>
+    <fragment
+        android:id="@+id/emptySearchFragment"
+        android:name="com.example.mynotesapp.ui.search.SearchFragment"
+        android:label="fragment_empty_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_emptySearchFragment_to_detailsNotesFragment"
+            app:destination="@id/detailsNotesFragment" />
+    </fragment>
+</navigation>
